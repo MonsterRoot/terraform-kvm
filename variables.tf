@@ -38,3 +38,8 @@ variable "image" {
 #     bridge = string
 #   })
 # }
+
+variable "kvm" {
+  type    = string
+  default = "qemu://system"
+}

@@ -79,7 +79,7 @@ resource "libvirt_domain" "vm" {
   cloudinit = libvirt_cloudinit_disk.commoninit.id
 
   network_interface {
-    network_id     = libvirt_network.bridge.id
+    network_id     = libvirt_network.default.id
     wait_for_lease = true
   }
   disk {
